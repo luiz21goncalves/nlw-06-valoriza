@@ -4,7 +4,7 @@
 
 ## Requisitos
 
-[ ] Ter [NodeJS](https://nodejs.org/) instalado
+- [ ] Ter [NodeJS](https://nodejs.org/) instalado
 
 
 ## Rodando da sua máquina
