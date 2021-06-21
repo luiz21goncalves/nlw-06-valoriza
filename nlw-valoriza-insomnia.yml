@@ -1,0 +1,95 @@
+_type: export
+__export_format: 4
+__export_date: 2021-06-21T21:31:32.455Z
+__export_source: insomnia.desktop.app:v2021.2.2
+resources:
+  - _id: req_1795eccf1acc4af382a13118c2b26c4d
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624310985756
+    created: 1624310982372
+    url: "{{ _.baseUrl }}/test"
+    name: Test GET
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1624310982372
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    parentId: null
+    modified: 1624310922928
+    created: 1624310922928
+    name: NLW Valoriza
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_9a5e38c3aaab43adb49d7641f2059e26
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624311031172
+    created: 1624311024970
+    url: "{{ _.baseUrl }}/test-post"
+    name: Test POST
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1624259841154
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_1b77b0f988f0e038d39c769cbcae4fc47cc52319
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624310923115
+    created: 1624310923115
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1624310923115
+    _type: environment
+  - _id: jar_1b77b0f988f0e038d39c769cbcae4fc47cc52319
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624310923117
+    created: 1624310923117
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_cba6175b1d5b4ab496a77c34088d15ba
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624310922932
+    created: 1624310922932
+    fileName: NLW Valoriza
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: env_9e337158b0674ee08cd7378b52920b5b
+    parentId: env_1b77b0f988f0e038d39c769cbcae4fc47cc52319
+    modified: 1624310959375
+    created: 1624310929544
+    name: Dev
+    data:
+      baseUrl: http://localhost:3333
+    dataPropertyOrder:
+      "&":
+        - baseUrl
+    color: "#7159c1"
+    isPrivate: false
+    metaSortKey: 1624310929544
+    _type: environment
