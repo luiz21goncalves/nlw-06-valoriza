@@ -19,6 +19,9 @@
     "prettier"
   ],
   "rules": {
+    "no-useless-constructor": "off",
+    "lines-between-class-members": "error",
+    "camelcase": "off",
     "import-helpers/order-imports": [
       "warn",
       {
