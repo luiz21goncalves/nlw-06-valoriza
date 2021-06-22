@@ -1,13 +1,11 @@
 import { Router } from 'express';
 
+import { createUser } from '../useCases/createUser';
+
 const routes = Router();
 
-routes.get('/test', (request, response) => {
-  return response.send('Hello NLW');
-});
-
-routes.post('/test-post', (request, response) => {
-  return response.send('[POST] NLW Valotiza');
+routes.post('/users', (request, response) => {
+  return createUser().createUserController.handle(request, response);
 });
 
 export { routes };
