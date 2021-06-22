@@ -1,8 +1,47 @@
 _type: export
 __export_format: 4
-__export_date: 2021-06-21T21:31:32.455Z
+__export_date: 2021-06-22T23:33:42.965Z
 __export_source: insomnia.desktop.app:v2021.2.2
 resources:
+  - _id: req_2f47ad9da9234446a59d907c8af661d4
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624404193870
+    created: 1624404075263
+    url: "{{ _.baseUrl }}/users"
+    name: Create User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Luiz Gonçalves",
+        	"email": "contato@luizgoncalves.dev",
+        	"admin": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_7bf6daf43f8e49a5b0b6349d01bb3fe0
+    authentication: {}
+    metaSortKey: -1624404075263
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    parentId: null
+    modified: 1624310922928
+    created: 1624310922928
+    name: NLW Valoriza
+    description: ""
+    scope: collection
+    _type: workspace
   - _id: req_1795eccf1acc4af382a13118c2b26c4d
     parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
     modified: 1624310985756
@@ -24,14 +63,6 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: wrk_5a9275b84feb486f98bf2b4a8d8de014
-    parentId: null
-    modified: 1624310922928
-    created: 1624310922928
-    name: NLW Valoriza
-    description: ""
-    scope: collection
-    _type: workspace
   - _id: req_9a5e38c3aaab43adb49d7641f2059e26
     parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
     modified: 1624311031172
@@ -89,7 +120,7 @@ resources:
     dataPropertyOrder:
       "&":
         - baseUrl
-    color: "#7159c1"
+    color: "#470f75"
     isPrivate: false
     metaSortKey: 1624310929544
     _type: environment
