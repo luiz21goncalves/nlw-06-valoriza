@@ -11,9 +11,7 @@ export class TagsRepository implements ITagsRepository {
   }
 
   async create({ name }: ICreateTag): Promise<Tag> {
-    const tag = new Tag();
-
-    Object.assign(tag, {
+    const tag = this.repository.create({
       name,
     });
 

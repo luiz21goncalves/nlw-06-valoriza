@@ -15,9 +15,7 @@ export class UserRepository implements IUsersRepository {
   }
 
   async create({ name, email, admin, password }: ICreateUser): Promise<User> {
-    const user = new User();
-
-    Object.assign(user, {
+    const user = this.repository.create({
       name,
       email,
       admin,
