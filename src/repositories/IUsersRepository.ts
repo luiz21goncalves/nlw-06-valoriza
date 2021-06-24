@@ -10,4 +10,5 @@ export type ICreateUser = {
 export type IUsersRepository = {
   create(data: ICreateUser): Promise<User>;
   findByEmail(email: string): Promise<User | undefined>;
+  findById(id: string): Promise<User | undefined>;
 };

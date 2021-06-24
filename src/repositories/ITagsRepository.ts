@@ -7,4 +7,5 @@ export type ICreateTag = {
 export type ITagsRepository = {
   create(data: ICreateTag): Promise<Tag>;
   findByName(name: string): Promise<Tag | undefined>;
+  findById(id: string): Promise<Tag | undefined>;
 };
