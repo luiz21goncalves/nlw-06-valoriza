@@ -1,7 +1,7 @@
 _type: export
 __export_format: 4
-__export_date: 2021-06-22T23:33:42.965Z
-__export_source: insomnia.desktop.app:v2021.2.2
+__export_date: 2021-06-24T00:22:47.771Z
+__export_source: insomnia.desktop.app:v2021.3.0
 resources:
   - _id: req_2f47ad9da9234446a59d907c8af661d4
     parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
@@ -42,40 +42,27 @@ resources:
     description: ""
     scope: collection
     _type: workspace
-  - _id: req_1795eccf1acc4af382a13118c2b26c4d
+  - _id: req_d6d7a511bcd04318b7500b4e8ba603b2
     parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
-    modified: 1624310985756
-    created: 1624310982372
-    url: "{{ _.baseUrl }}/test"
-    name: Test GET
-    description: ""
-    method: GET
-    body: {}
-    parameters: []
-    headers: []
-    authentication: {}
-    metaSortKey: -1624310982372
-    isPrivate: false
-    settingStoreCookies: true
-    settingSendCookies: true
-    settingDisableRenderRequestBody: false
-    settingEncodeUrl: true
-    settingRebuildPath: true
-    settingFollowRedirects: global
-    _type: request
-  - _id: req_9a5e38c3aaab43adb49d7641f2059e26
-    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
-    modified: 1624311031172
-    created: 1624311024970
-    url: "{{ _.baseUrl }}/test-post"
-    name: Test POST
+    modified: 1624493733688
+    created: 1624493353299
+    url: "{{ _.baseUrl }}/tags"
+    name: Create Tag
     description: ""
     method: POST
-    body: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Top"
+        }
     parameters: []
-    headers: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_7bf6daf43f8e49a5b0b6349d01bb3fe0
     authentication: {}
-    metaSortKey: -1624259841154
+    metaSortKey: -1624404075213
     isPrivate: false
     settingStoreCookies: true
     settingSendCookies: true
