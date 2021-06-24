@@ -14,7 +14,12 @@ type IUserRequest = {
 export class CreateUserUseCase {
   constructor(private usersRepository: IUsersRepository) {}
 
-  async execute({ name, email, admin, password }: IUserRequest): Promise<User> {
+  async execute({
+    name,
+    email,
+    admin = false,
+    password,
+  }: IUserRequest): Promise<User> {
     const userAlreadyExists = await this.usersRepository.findByEmail(email);
 
     if (userAlreadyExists) {
