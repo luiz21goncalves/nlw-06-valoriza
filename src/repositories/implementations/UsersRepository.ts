@@ -14,13 +14,14 @@ export class UserRepository implements IUsersRepository {
     return this.repository.findOne({ where: { email } });
   }
 
-  async create({ name, email, admin }: ICreateUser): Promise<User> {
+  async create({ name, email, admin, password }: ICreateUser): Promise<User> {
     const user = new User();
 
     Object.assign(user, {
       name,
       email,
       admin,
+      password,
     });
 
     return this.repository.save(user);

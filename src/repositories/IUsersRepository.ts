@@ -4,6 +4,7 @@ export type ICreateUser = {
   name: string;
   email: string;
   admin?: boolean;
+  password: string;
 };
 
 export type IUsersRepository = {
