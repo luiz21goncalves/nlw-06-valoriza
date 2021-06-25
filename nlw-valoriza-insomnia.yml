@@ -1,11 +1,81 @@
 _type: export
 __export_format: 4
-__export_date: 2021-06-24T00:22:47.771Z
+__export_date: 2021-06-25T00:00:26.486Z
 __export_source: insomnia.desktop.app:v2021.3.0
 resources:
+  - _id: req_ab52481f04c341f49f8c288dd997e2cf
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624578881894
+    created: 1624578499099
+    url: "{{ _.baseUrl }}/compliments"
+    name: Create Compliment
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"user_receiver": "8d7b03d2-5c4d-443a-baac-98b241716649",
+        	"user_sender": "c6e11c30-9035-4393-bd41-114939aefd49",
+        	"tag_id": "26035944-d855-429c-84b2-4f55954f1ee4",
+        	"message": "top de mais"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_a252831d32d54ab1aae4de428041e45c
+    authentication: {}
+    metaSortKey: -1624578499099
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    parentId: null
+    modified: 1624310922928
+    created: 1624310922928
+    name: NLW Valoriza
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_1da8413875eb4d4190c12af55d1b09b3
+    parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
+    modified: 1624574340934
+    created: 1624574273942
+    url: "{{ _.baseUrl }}/sessions"
+    name: Authenticate User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "contato@luizgoncalves.dev",
+        	"password": "123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_7c49429040cd436693122ec4188331b8
+    authentication: {}
+    metaSortKey: -1624574273942
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
   - _id: req_2f47ad9da9234446a59d907c8af661d4
     parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
-    modified: 1624404193870
+    modified: 1624579019034
     created: 1624404075263
     url: "{{ _.baseUrl }}/users"
     name: Create User
@@ -15,8 +85,9 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"name": "Luiz Gonçalves",
-        	"email": "contato@luizgoncalves.dev",
+        	"name": "Test",
+        	"email": "test@test.dev",
+        	"password": "123456",
         	"admin": true
         }
     parameters: []
@@ -34,14 +105,6 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: wrk_5a9275b84feb486f98bf2b4a8d8de014
-    parentId: null
-    modified: 1624310922928
-    created: 1624310922928
-    name: NLW Valoriza
-    description: ""
-    scope: collection
-    _type: workspace
   - _id: req_d6d7a511bcd04318b7500b4e8ba603b2
     parentId: wrk_5a9275b84feb486f98bf2b4a8d8de014
     modified: 1624493733688
