@@ -10,6 +10,10 @@ export class TagsRepository implements ITagsRepository {
     this.repository = getRepository(Tag);
   }
 
+  async findAll(): Promise<Tag[]> {
+    return this.repository.find();
+  }
+
   async findById(id: string): Promise<Tag | undefined> {
     return this.repository.findOne(id);
   }
