@@ -9,4 +9,6 @@ export type ICreateCompliments = {
 
 export type IComplimentsRepository = {
   create(data: ICreateCompliments): Promise<Compliment>;
+  findByUserReceiver(user_receiver: string): Promise<Compliment[]>;
+  findByUserSender(user_sender: string): Promise<Compliment[]>;
 };

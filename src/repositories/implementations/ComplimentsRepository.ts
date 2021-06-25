@@ -13,6 +13,20 @@ export class ComplimentsRepository implements IComplimentsRepository {
     this.repository = getRepository(Compliment);
   }
 
+  async findByUserReceiver(user_receiver: string): Promise<Compliment[]> {
+    return this.repository.find({
+      where: { user_receiver },
+      relations: ['tag', 'userSender', 'userReceiver'],
+    });
+  }
+
+  async findByUserSender(user_sender: string): Promise<Compliment[]> {
+    return this.repository.find({
+      where: { user_sender },
+      relations: ['tag', 'userSender', 'userReceiver'],
+    });
+  }
+
   async create({
     user_receiver,
     user_sender,
